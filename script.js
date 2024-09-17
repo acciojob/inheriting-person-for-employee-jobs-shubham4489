@@ -12,7 +12,7 @@ function Employee(name, age, jobTitle) {
 	person.call(this,name,age);
 	this.jobTitle = jobTitle;
 }
-Employee.ptototype = Object.create(person.prototype);
+Employee.ptototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 Employee.prototype.jobGreet = function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`);
